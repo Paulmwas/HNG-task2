@@ -4,7 +4,7 @@
 
 
 header{
-  width: 1440px;
+  width: 100%;
   height: 86px;
   padding: 24px 50px 22px 50px;
   gap: 0px;
@@ -83,6 +83,8 @@ header{
   background-repeat: no-repeat;
   background-size: cover;
   height: 560px;
+  width: 100%;
+  overflow: hidden;
   color: #000;
   font-family: Montserrat;
 }
@@ -110,6 +112,7 @@ header{
   line-height: 20px;
   color: rgba(10, 10, 10, 0.64);
   height: 60px;
+  margin-bottom: 40px;
 }
 .hero-description a{
   height: 41px;
@@ -121,7 +124,164 @@ header{
   text-decoration: none;
   gap: 10px;
   padding: 12px 32px 12px 32px;
-
 }
-
-
+/* ------------------------------products------------------- */
+.products-page{
+  max-width: fit-content;
+  height: 100vh;
+  font-family: Montserrat;
+  padding-left: 40px;
+}
+.categories{
+  display: inline-flex;
+  list-style: none;
+  align-items: center;
+  height: 24px;
+  gap: 25px;
+  padding-top: 60px;
+  padding-bottom: 70px;
+}
+.first{
+ font-size: 20px;
+ font-weight: 600;
+ line-height: 24.38px;
+ text-align: left;
+}
+.catItem{
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  color: rgba(10, 10, 10, 0.64);
+}
+.last{
+  padding-left: 550px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17.07px;
+  color: rgba(10, 10, 10, 0.64);
+}
+.container{
+  max-width: 100%;
+  display: grid;
+  gap: 0;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-content: center;
+  padding-left: 100px;
+  overflow-x: hidden;
+}
+.product{
+  width: 317px;
+  height: 384px;
+}
+.prod1 img{
+  width: 158px;
+  height: 272px;
+}
+.prod2 img{
+  width: 157px;
+  height: 272px;
+}
+.prod3 img{
+  width: 272px;
+  height: 272px;
+}
+.prod4 img{
+  width: 272px;
+  height: 272px;
+}
+.prod5 img{
+  width: 161px;
+  height: 272px;
+}
+.prod6 img{
+  width: 149px;
+  height: 272px;
+}
+.prod7 img{
+  width: 181px;
+  height: 272px;
+}
+.prod8 img{
+  width: 161px;
+  height: 272px;
+}
+.brand{
+  display: flex;
+  align-items: center;
+  gap: 70px;
+  color: rgba(10, 10, 10, 1);
+}
+.brand-desc h4{
+  color: rgba(10, 10, 10, 1);
+  font-size: 16px;
+  font-weight: 500;
+}
+.brand-desc p{
+  color: rgba(10, 10, 10, 0.64);
+  font-weight: 400;
+  font-size: 14px;
+}
+.load-button{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  height: 41px;
+  width: 172px;
+  border: 1px solid #000;
+  background-color: #000;
+  border-radius: 32px;
+  color: #fff;
+  margin: auto;
+}
+.highlight{
+  height: 50vh;
+  font-family: Montserrat;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.watches{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.watches img{
+  width: 182px;
+  height: 300px;
+}
+.watches-desc h1{
+  font-weight: 600;
+  font-size: 32px;
+}
+.watches-desc p{
+  font-size: 14px;
+  font-weight: 400;
+}
+@media (max-width:600px) {
+  .hero{
+    height: 100vh;
+  }
+  .hero-description{
+    padding-left: 20px;
+  }
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .categories{
+    display: block;
+    margin-bottom: 40px;
+  }
+  .highlight{
+    display: block;
+  }
+}
+/* @media (max-width:800px){
+  .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+} */

@@ -2,6 +2,8 @@
 import './App.css'
 import Header from './Header';
 import Hero from './Hero';
+import Products from './components/Products';
+import Highlight from './components/Highlight';
 
 function App() {
 
@@ -9,6 +11,8 @@ function App() {
     <>
      <Header />
      <Hero />
+     <Products />
+     <Highlight />
     </>
   )
 }
