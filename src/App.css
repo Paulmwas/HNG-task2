@@ -457,6 +457,9 @@
     display: block;
     margin-bottom: 40px;
   }
+  .last{
+    display: none;
+  }
   .highlight{
     height: auto;
     display: block;
