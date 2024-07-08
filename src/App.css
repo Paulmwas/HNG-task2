@@ -104,6 +104,10 @@
   cursor: pointer;
   font-size: 24px;
 }
+.btn:hover{
+  color: #000;
+  background-color: #f6710c;
+}
 
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -112,6 +116,10 @@
     flex-direction: column;
     width: 100%;
     position: relative;
+  }
+  .logo{
+    display: inline;
+    font-size: 28px;
   }
   .search-input, .search-icon{
     display: none;
@@ -437,6 +445,40 @@
   font-weight: 400;
   width: fit-content;
 }
+.footer{
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+  gap: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  font-family: 'Montserrat';
+  padding-top: 50px;
+  height: 40vh;
+}
+.company{
+  height: 97px;
+  width: 336px;
+}
+.company h1{
+  font-weight: 400;
+  font-size: 28px;
+  font-family: 'DM Serif Display';
+}
+
+.item1 li{
+  list-style: none;
+  line-height: 1.5;
+}
+.item1 li a{
+  text-decoration: none;
+}
+.copyright{
+  display: flex;
+  width: 100%;
+  height: auto;
+}
 @media (max-width:600px) {
   .products-page{
     height: auto;
@@ -467,5 +509,8 @@
   .quality{
     height: auto;
     display: block;
+  }
+  .desc-title h2{
+    font-size: 20px;
   }
 }

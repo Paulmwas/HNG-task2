@@ -13,7 +13,7 @@ const Products = () => {
             <ProductCard />
             
         </div>
-        <a className="load-button" href="#">Load More</a>
+        <a className="load-button btn" href="#">Load More</a>
 
       
     </div>

@@ -8,7 +8,7 @@ const Hero = () => {
               
             </div>
             <p>Discover timeless elegance at Doclan Co. Shop our curated collection of carefully crafted men’s watches and elevate your stature effortlessly</p>  
-            <a href="#">Start Shopping</a>
+            <a href="#" className="btn">Start Shopping</a>
 
 
         </div>
