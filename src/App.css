@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /*--------------------------------------------Header-------------------------------------*/
-.navbar{
+.navbar {
   width: 100%;
   display: flex;
   align-items: center;
@@ -13,33 +13,52 @@
   font-family: DM Serif Display;
   padding: 24px 50px 22px 50px;
   box-shadow: 0px 2px 16px 0px #00000014;
+  position: re;
 }
-.logo{
+
+.logo {
   font-size: 28px;
   font-weight: 400;
   cursor: pointer;
 }
-.logo span{
+
+.logo span {
   color: #f6710c;
 }
-.navbar ul{
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  position: relative;
+}
+
+.navbar ul {
   flex: 1;
   list-style: none;
-  font-family:  sans-serif;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
-.navbar ul li{
-  display: inline-block;
+
+.navbar ul li {
   margin: 10px 20px;
   cursor: pointer;
 }
-.nav1{
+
+.nav1 {
   font-weight: 600px;
   font-size: 14px;
 }
-.navItem{
+
+.navItem {
   font-weight: 400;
   color: rgba(10, 10, 10, 0.64);
 }
+
 .searchbox {
   display: flex;
   align-items: center;
@@ -53,7 +72,7 @@
 .search-input {
   width: 100%;
   padding: 10px;
-  padding-right: 35px; /* Add padding to the left to make space for the icon */
+  padding-right: 35px; /* Add padding to the right to make space for the icon */
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -70,7 +89,6 @@
 .nav {
   display: flex;
   list-style: none;
-
 }
 
 .nav-item {
@@ -78,6 +96,50 @@
   display: flex;
   align-items: center;
 }
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+  .search-input, .search-icon{
+    display: none;
+  }
+  .search-icon{
+    top: 10px;
+  }
+  .nav-menu.open {
+    display: flex;
+  }
+  .navbar ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar ul li {
+    margin: 10px 0;
+    text-align: center;
+  }
+  .searchbox {
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
+
 
 /* .searchbox{
   display: flex;
