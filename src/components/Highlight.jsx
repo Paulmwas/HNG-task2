@@ -1,8 +1,12 @@
 import Highlight1 from '../assets/watch9.png';
 import Highlight2 from '../assets/watch10.png';
+import Features from './Features';
+
+
 
 const Highlight = () => {
   return (
+    <>
     <div className="highlight">
         <div className="watches">
             <img src={Highlight1} alt="" />
@@ -18,16 +22,11 @@ const Highlight = () => {
                 <p>KINGSMEN VIII COLLECTION</p>
             </div>
         </div>
-        <div className="quality">
-            <div className="qual-desc">
-                
-                           
-
-            </div>
-        </div>
-
-      
+        
+        
     </div>
+    < Features/>
+    </>
   )
 }
 
