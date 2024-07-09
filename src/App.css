@@ -360,7 +360,7 @@
   padding-right: 30px;
   font-family: 'Montserrat';
   padding-top: 50px;
-  height: 40vh;
+  height: auto;
 }
 .company{
   height: 97px;
@@ -643,6 +643,11 @@ h2 {
     width: 100%;
     margin: 0;
   }
+
+  .item1{
+    margin-top: 40px;
+  }
+
 
   .cart-item {
     flex-direction: column;
