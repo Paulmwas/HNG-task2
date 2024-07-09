@@ -2,6 +2,7 @@ import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } 
 import './App.css'
 import Homepage from "./components/Homepage";
 import Cart from "./components/Cart";
+import CheckoutPage from "./components/CheckOut";
 
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <>
       <Route index element={<Homepage />} />
       <Route path="/cart" element={<Cart />} />
+      <Route path="/checkout" element={<CheckoutPage />} />
 
       </>
 
