@@ -613,6 +613,25 @@ h2 {
   font-size: 1rem; /* Slightly larger font for button text */
   cursor: pointer; /* Indicate clickable action */
 }
+/* Existing styles... */
+
+@media (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column; /* Stack sections vertically on small screens */
+  }
+
+  .order-details,
+  .order-summary,
+  .payment-details {
+    flex: 1 0 100%; /* Make each section take full width on small screens */
+    margin-bottom: 15px; /* Reduce spacing between sections on smaller screens */
+  }
+
+  .product-image {
+    margin-bottom: 10px; /* Add spacing below image on small screens */
+  }
+}
+
 
 
 @media (max-width: 768px) {
