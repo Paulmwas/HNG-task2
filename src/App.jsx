@@ -1,25 +1,23 @@
-
+import { Route, createBrowserRouter, createRoutesFromElements, RouterProvider } from "react-router-dom";
 import './App.css'
-import Header from './Header';
-import Hero from './Hero';
-import Products from './components/Products';
-import Highlight from './components/Highlight';
-import Footer from './components/Footer';
-import Botttom from './components/Botttom';
-import { BrowserRouter as Router } from 'react-router-dom';
+import Homepage from "./components/Homepage";
+import Cart from "./components/Cart";
+
 
 function App() {
+  const router = createBrowserRouter(
+    createRoutesFromElements(
+      <>
+      <Route index element={<Homepage />} />
+      <Route path="/cart" element={<Cart />} />
+
+      </>
+
+    )
+  )
 
   return (
-    <>
-     <Router>
-     <Header />
-     <Hero />
-     <Products />
-     <Highlight />
-     <Footer />
-     <Botttom/></Router>
-    </>
+    <RouterProvider router={router}/>
   )
 }
 

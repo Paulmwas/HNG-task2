@@ -232,15 +232,7 @@
   line-height: 17.07px;
   color: rgba(10, 10, 10, 0.64);
 }
-.container{
-  max-width: 100%;
-  display: grid;
-  gap: 0;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: center;
-  padding-left: 100px;
-  overflow-x: hidden;
-}
+
 .product{
   width: 317px;
   height: 384px;
@@ -390,7 +382,10 @@
 .copyright{
   display: flex;
   width: 100%;
-  height: auto;
+  height: 10vh;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 @media (max-width:600px) {
   .products-page{

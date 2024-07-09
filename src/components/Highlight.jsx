@@ -7,7 +7,7 @@ import Features from './Features';
 const Highlight = () => {
   return (
     <>
-    <div className="highlight">
+    <div className="highlight ">
         <div className="watches">
             <img src={Highlight1} alt="" />
             <div>

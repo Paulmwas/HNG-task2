@@ -2,7 +2,7 @@
 
 
 
-const Botttom = () => {
+const Bottom = () => {
   return (
     <div className="copyright">
         <p>Copyright <span>&#169;</span> 2024 All Rights Reserved Doclan Co.</p>
@@ -14,4 +14,4 @@ const Botttom = () => {
   )
 }
 
-export default Botttom
+export default Bottom
