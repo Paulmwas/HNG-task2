@@ -20,12 +20,15 @@
   font-size: 28px;
   font-weight: 400;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .logo span {
   color: #f6710c;
 }
-
+.nav1{
+  text-decoration: none;
+}
 .nav-menu {
   display: flex;
   align-items: center;
@@ -72,7 +75,7 @@
 .search-input {
   width: 100%;
   padding: 10px;
-  padding-right: 35px; /* Add padding to the right to make space for the icon */
+  padding-right: 35px; 
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -109,7 +112,6 @@
   background-color: #f6710c;
 }
 
-/* Mobile Styles */
 @media (max-width: 768px) {
   .nav-menu {
     display: none;
@@ -147,95 +149,6 @@
     display: block;
   }
 }
-
-
-/* .searchbox{
-  display: flex;
-  align-items: center;
-  background: #fff;
- 
-  border-radius: 10px;
-}
-.searchbox input{
-  padding: 6px;
-  background: transparent;
-  color: #000;
-  outline: 0;
-} */
-/* header{
-  width: 100%;
-  height: 86px;
-  padding: 24px 50px 22px 50px;
-  gap: 0px;
-  opacity: 0px;
-  box-shadow: 0px 2px 16px 0px #00000014;
-  background: #FFFFFF;
-  color: #000;
-  
-
-
-}
-.header{
-  color: #000;
-  display: flex;
-  align-items: center;
-  list-style: none;
-
-  gap: 42px;
-}
-.header .logo{  
-  font-family: DM Serif Display;
-  font-size: 28px;
-  font-weight: 400;
-  text-align: left;
-  color: #000;
-  display: inline-flex;
-}
-.logo span{
-  font-family: DM Serif Display;
-  font-size: 28px;
-  font-weight: 400;
-  color: #f6710c;
-}
-.header li a{
-  text-decoration: none;
-}
-
-.searchBar{
-  height: 30px;
-  width: 300px;
-  position: block;
-  font-size: 20px;
-}
-.searchButton{
-  font-size: 20px;
-  position: absolute;
-  right: 339px;
-  border-color: transparent;
-  background: transparent;
-}
-.nav{
-  padding-left: 0px;
-  font-family: sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  line-height: 17.07px;
-  text-align: left;
-}
-.navItem{
-  font-family: sans-serif;
-  color: rgba(26, 24, 24, 0.64);
-  font-size: 16px;
-}
-.myIcons{
-  width: 24px;
-  height: 24px;
-  top: 8px;
-  left: 360px;
-  padding: 2px 3px 3px 2px;
-  gap: 0px;
-  opacity: 0px;
-} */
 .hero{
   background-image: url(./assets/hero.png);
   background-position: center;
@@ -287,7 +200,7 @@
 /* ------------------------------products------------------- */
 .products-page{
   max-width: fit-content;
-  height: 100vh;
+  height: auto;
   font-family: Montserrat;
   padding-left: 40px;
 }
@@ -395,7 +308,7 @@
   margin: auto;
 }
 .highlight{
-  height: 50vh;
+  height: auto;
   font-family: Montserrat;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -421,7 +334,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 39px;
+  height: auto;
   gap: 16px;
   width: 100%;
   padding-left: 50px;
@@ -512,5 +425,12 @@
   }
   .desc-title h2{
     font-size: 20px;
+  }
+  .footer{
+    display: block;
+    height: auto;
+  }
+  .item1 h1{
+    padding-top: 20px;
   }
 }

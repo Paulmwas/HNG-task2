@@ -21,7 +21,8 @@ const ProductCard = () => {
             <h4>GORBEN Classic 3</h4>
             <p>$18,000</p>   
           </div>
-          <FontAwesomeIcon icon={faBagShopping} />        
+          <a href=""><FontAwesomeIcon icon={faBagShopping} /> </a>
+                 
         </div>
     </div>
     <div className='product prod2'>
