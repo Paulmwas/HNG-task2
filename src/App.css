@@ -151,6 +151,7 @@
 }
 .hero{
   background-image: url(./assets/hero.png);
+  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -609,11 +610,10 @@ h2 {
   border: none; /* Remove default button border */
   border-radius: 5px; /* Rounded corners for button */
   background-color: #333; /* Darker blue button color */
-  color: #fff; /* White button text */
-  font-size: 1rem; /* Slightly larger font for button text */
-  cursor: pointer; /* Indicate clickable action */
+  color: #fff;
+  font-size: 1rem; 
+  cursor: pointer; 
 }
-/* Existing styles... */
 
 @media (max-width: 768px) {
   .checkout-container {
@@ -683,6 +683,7 @@ h2 {
     padding-left: 20px;
   }
   .categories{
+    padding-top: 40px;
     display: block;
     margin-bottom: 40px;
   }

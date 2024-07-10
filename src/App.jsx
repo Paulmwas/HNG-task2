@@ -6,6 +6,7 @@ import CheckoutPage from "./components/CheckOut";
 
 
 function App() {
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <>
