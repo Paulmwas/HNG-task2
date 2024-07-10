@@ -9,7 +9,7 @@ const Products = () => {
             <li className="catItem">Limited Edition</li>
             <li className="last">View all <span>&#10095;</span></li>
         </div>
-        <div className="prodcontainer w-full lg:grid grid-cols-4 gap-1 pl-4 ">
+        <div className="prodcontainer w-full lg:grid lg:grid-cols-4 gap-1 pl- pt-[50px] mr-[50px] ">
             <ProductCard />
             
         </div>

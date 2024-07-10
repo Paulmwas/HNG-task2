@@ -27,7 +27,7 @@ const Header = () => {
         </ul>
         <div className="searchbox">
           <div className="input-wrapper">
-            <input type="text" placeholder='search' className='search-input'/>
+            <input type="text" className='search-input'/>
             <FontAwesomeIcon icon={faSearch} className='search-icon'/>
           </div>
           <ul className='nav'>

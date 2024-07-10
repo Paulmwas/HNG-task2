@@ -15,27 +15,28 @@ import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
 const ProductCard = () => {
   const [cart, setCart] = useState(0)
   function updateCart(){
+    const cartItems = document.querySelector('')
     updateCart(setCart(cart + 1))
 }
   console.log(cart)
   
   const products = [
-    { id: 1, name: 'GORBEN Classic 3', price: 18000, img: Watch1 },
-    { id: 2, name: 'RIOLES Version 2', price: 9770, img: Watch2 },
-    { id: 3, name: 'QUARTZ Silverline', price: 16000, img: Watch3 },
-    { id: 4, name: 'JACQUES Lemans', price: 28000, img: Watch4 },
-    { id: 5, name: 'VALTRA Leonard', price: 14000, img: Watch5 },
-    { id: 6, name: 'JACQUES Lemans Retro', price: 31000, img: Watch6 },
-    { id: 7, name: 'CASIO Timeless X', price: 14000, img: Watch7 },
-    { id: 8, name: 'SKMEI IV', price: 24000, img: Watch8 },
+    { id: 1, name: 'GORBEN Classic 3', price: '$'+18000, img: Watch1 },
+    { id: 2, name: 'RIOLES Version 2', price: '$'+9770, img: Watch2 },
+    { id: 3, name: 'QUARTZ Silverline', price: '$'+16000, img: Watch3 },
+    { id: 4, name: 'JACQUES Lemans', price: '$'+28000, img: Watch4 },
+    { id: 5, name: 'VALTRA Leonard', price: '$'+14000, img: Watch5 },
+    { id: 6, name: 'JACQUES Lemans Retro', price: '$'+31000, img: Watch6 },
+    { id: 7, name: 'CASIO Timeless X', price: '$'+14000, img: Watch7 },
+    { id: 8, name: 'SKMEI IV', price: '$'+24000, img: Watch8 },
   ];
   return (
     <>
     <div className='product prod1'>
-        <img src={Watch1} alt="" /> 
+        <img src={Watch1} alt="" className='w-[20px]'/> 
         <div className="brand">
           <div className="brand-desc">
-            <h4>{products[0].name}</h4>
+            <h4 className='flex-grow'>{products[0].name}</h4>
             <p>{products[0].price}0</p>   
           </div>
           <a href="/" onClick={updateCart}><FontAwesomeIcon icon={faBagShopping} className='update'/> </a>
