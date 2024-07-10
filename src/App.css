@@ -682,12 +682,6 @@ h2 {
   .hero-description{
     padding-left: 20px;
   }
-  .prodcontainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-
- 
-  }
   .categories{
     display: block;
     margin-bottom: 40px;

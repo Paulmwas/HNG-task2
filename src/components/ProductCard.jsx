@@ -15,7 +15,6 @@ import { faBagShopping } from '@fortawesome/free-solid-svg-icons';
 const ProductCard = () => {
   const [cart, setCart] = useState(0)
   function updateCart(){
-    const cartItems = document.querySelector('')
     updateCart(setCart(cart + 1))
 }
   console.log(cart)
